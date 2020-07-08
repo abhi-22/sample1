@@ -1,5 +1,5 @@
 body{
-	font-size:16px;
+	font-size:15px;
 	color: #F1DFF9 ;
 	background-color: #581845;
 }
@@ -57,7 +57,7 @@ body{
 	text-align: center;
 }
 #nav-list a:hover{
-	background:#E7E7E7;
+	background: #581845;
 }
 #nav-list a span{
 	font-size: 1.8em;
@@ -71,7 +71,7 @@ body{
 }
 #phone div{
 	/** we deliver**/
-	color: #557c3e;
+	color: #fff;
 	text-align: right;
 	padding-right: 15px;
 }
@@ -88,9 +88,9 @@ body{
 	box-shadow: 0 0 50px #3F0C1F;
 	border: 2px solid #3F0C1F;
 	margin-bottom: 25px;
-	padding-bottom: 50px;
+	padding-bottom: 50px;\q
 }
-#menu-tile,#special-tile,#map-tile{
+#menu-tile,#special-tile,#map-tile,#online1,#online2,#online3{
 	height: 250px;
 	width: 100%;
 	margin-top: 25px;
@@ -99,7 +99,7 @@ body{
 	border: 2px solid #3F0C1F;
 	overflow: hidden;
 }
-#menu-tile:hover,#special-tile:hover,#map-tile:hover{
+#menu-tile:hover,#special-tile:hover,#map-tile:hover,#online1:hover,#online2:hover,#online3:hover{
 	box-shadow: 0 1px 5px 1px #cccccc;
 }
 #menu-tile{
@@ -112,8 +112,23 @@ body{
 	background-position: center;
 	background-size: cover;
 }
+#online1{
+	background:url('../images/swiggy.jpg');
+	background-position: center;
+	background-size: cover;
+}
+#online2{
+	background:url('../images/zomato.png');
+	background-position: center;
+	background-size: cover;
+}
+#online3{
+	background:url('../images/foodpanda.jpg');
+	background-position: center;
+	background-size: cover;
+}
 
-#menu-tile span,#special-tile span,#map-tile span{
+#menu-tile span,#special-tile span,#map-tile span,#online1 span,#online2 span,#online3 span{
 	position: absolute;
 	bottom: 0px;
 	right: 0px;
@@ -151,15 +166,22 @@ body{
 /****large device*****/
 @media(min-width: 1200px){
 	.container .jumbotron{
-		background: url('../images/jumbotron_1200.jpg')no-repeat;
+		
 		height: 675px;
+	}
+	#logo-img{
+		background:url('../images/logo150.png') no-repeat;
+		background-size: cover;
+		width: 120px;
+		height:120px;
+		margin:5px 5px 5px 0;
 	}
 }
 /******medium device only*****/
 @media(min-width: 992px) and (max-width: 1199px){
 	/**header**/
 	#logo-img{
-		background:  no-repeat;
+		background:url('../images/logo100.png') no-repeat;
 		width: 100px;
 		height:100px;
 		margin:5px 5px 5px 0;
@@ -172,6 +194,13 @@ body{
 }
 /***small device only****/
 @media(min-width:768px) and (max-width: 991px){
+	#logo-img{
+		background:url('../images/logolarge.png') no-repeat;
+		background-size: cover;
+		width: 150px;
+		height:150px;
+		margin:5px 5px 5px 0;
+	}
 
 }
 /****** extra small dexice only***/
@@ -212,7 +241,13 @@ body{
 		font-size: .7em;
 		letter-spacing: .1em;
 		text-transform: uppercase;
-		color: #000;
+		color: #fff;
+	}
+	#logo-img{
+		background:url('../images/logo80.png') no-repeat;
+		width: 80px;
+		height:80px;
+		margin:2px 2px 2px 2px;
 	}
 	/*****footer***/
 	.panel-footer section{
@@ -230,11 +265,62 @@ body{
 		padding: 0;
 
 	}
-    #menu-tile,#specials-tile{
+    #menu-tile,#specials-tile,#online1,#online2,#online#{
     	margin: 15 px auto 15px;
 
     }
     .menu-item-photo{
     	margin-right:auto;
     }
+}
+.quote{
+	font-size: .75em;
+	padding-bottom: 30px;
+}
+/*******menu*****/.menu-item-tile {
+  margin-bottom: 25px;
+}
+#menu-categories-title{
+	font-family: 'Bangers', cursive;
+	letter-spacing: .1em;
+}
+.menu-item-tile hr {
+  width: 80%;
+}
+.menu-item-tile .menu-item-price {
+  font-size: 1.1em;
+  text-align: right;
+  margin-top: -15px;
+  margin-right: -15px;
+}
+.menu-item-tile .menu-item-price span {
+  font-size: .6em;
+}
+.menu-item-photo {
+  position: relative;
+  border: 2px solid #3F0C1F; 
+  overflow: hidden;
+  padding: 0;
+  margin-right: -15px;
+  margin-left: auto;
+  margin-bottom: 20px;
+  max-width: 250px;
+}
+.menu-item-photo div {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80px;
+  background-color: #557c3e;
+  text-align: center;
+}
+.menu-item-description {
+  padding-right: 30px;
+}
+h3.menu-item-title {
+  margin: 0 0 10px;
+}
+.menu-item-details {
+  font-size: .9em;
+  font-style: italic;
 }
