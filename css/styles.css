@@ -5,7 +5,10 @@ body{
 }
 /**HEADER**/
 
-
+#nav-list .active{
+	background-color: #581845;
+	color: #581845;
+}
 #header-nav{
 	background-color:#BE47D6     ;
 	border-radius: 0;
@@ -224,8 +227,9 @@ body{
 
 	}
 	#collapsable-nav a span {
-		font-size: 1em;
+		font-size: 1.5em;
 		margin-right: 5px;
+		color: #000;
 	}
 	#call-btn>a{
 		font-size: 1.5em;
