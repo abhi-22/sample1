@@ -118,7 +118,7 @@ body{
 	background-size: cover;
 }
 #online2{
-	background:url('../images/zomato.png');
+	background:url("https://upload.wikimedia.org/wikipedia/commons/e/ef/Zomato-flat-logo.png");
 	background-position: center;
 	background-size: cover;
 }
