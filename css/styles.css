@@ -1,16 +1,13 @@
 body{
 	font-size:15px;
 	color: #F1DFF9 ;
-	background-color: #581845;
+	background-color: #7f0728;
 }
 /**HEADER**/
 
-#nav-list .active{
-	background-color: #581845;
-	color: #581845;
-}
+
 #header-nav{
-	background-color:#BE47D6     ;
+	background-color:#6CEBD6    ;
 	border-radius: 0;
 	border: 0;
 	background:relative;
@@ -56,11 +53,11 @@ body{
 	margin-top: 10px;
 }
 #nav-list a{
-	color: #FAFA09;
+	color: #090DFA;
 	text-align: center;
 }
 #nav-list a:hover{
-	background: #581845;
+	background: #7f0728;
 }
 #nav-list a span{
 	font-size: 1.8em;

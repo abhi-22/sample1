@@ -48,6 +48,7 @@ a {
 a:active,
 a:hover {
   outline: 0;
+  color: #581845;
 }
 abbr[title] {
   border-bottom: 1px dotted;
@@ -2354,7 +2355,7 @@ table th[class*="col-"] {
 .table-hover > tbody > tr.active:hover > td,
 .table-hover > tbody > tr:hover > .active,
 .table-hover > tbody > tr.active:hover > th {
-  background-color: #e8e8e8;
+  background-color: #000;
 }
 .table > thead > tr > td.success,
 .table > tbody > tr > td.success,
@@ -3092,7 +3093,7 @@ fieldset[disabled] a.btn {
 .btn-default.active.focus,
 .open > .dropdown-toggle.btn-default.focus {
   color: #333;
-  background-color: #d4d4d4;
+  background-color:#000;
   border-color: #8c8c8c;
 }
 .btn-default:active,
@@ -3148,7 +3149,7 @@ fieldset[disabled] .btn-default.focus {
 .btn-primary:active.focus,
 .btn-primary.active.focus,
 .open > .dropdown-toggle.btn-primary.focus {
-  color: #fff;
+  color: #000;
   background-color: #204d74;
   border-color: #122b40;
 }
